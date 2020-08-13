@@ -11,7 +11,7 @@ import {
   Poppins_600SemiBold 
 } from '@expo-google-fonts/poppins';
 
-import LandingPage from './src/pages/LandingPage';
+import AppStack from './src/routes/AppStack';
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -26,7 +26,7 @@ export default function App() {
   } else {
     return (
       <>
-        <LandingPage />
+        <AppStack />
         <StatusBar style="light" />
       </> 
     );
